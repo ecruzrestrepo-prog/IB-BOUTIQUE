@@ -1,0 +1,8 @@
+streamlit>=1.66,<2
+oracledb>=26.0,<27
+pandas>=3.0,<4
+numpy>=2,<3
+python-dotenv>=1.2,<2
+sqlglot>=30,<31
+ngrok>=1.7,<2
+tzdata>=2025.2

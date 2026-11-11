@@ -1,0 +1,62 @@
+DASHBOARD DE ROPA — LEEME PRIMERO
+
+1. Trabaja en la carpeta del proyecto, donde están app.py y este archivo.
+2. Instala Python 3.12 o posterior de 64 bits desde https://www.python.org/downloads/.
+   En Windows, habilita la opción de agregar Python al PATH.
+3. El archivo .env incluido es una plantilla idéntica a .env.example.
+   Completa .env con tus credenciales locales antes de iniciar.
+   Si ya tienes un .env local configurado, consérvalo.
+   En algunos exploradores .env aparece oculto; sí está en la carpeta del proyecto.
+4. Solicita al propietario las credenciales y el wallet Oracle por un canal privado.
+   Coloca el wallet en Wallet_ADBG05/ junto a app.py y verifica WALLET_DIR en .env.
+   Las credenciales reales y el wallet no se incluyen en esta entrega.
+
+WINDOWS
+Haz doble clic en iniciar_windows.bat.
+También puedes ejecutarlo desde la terminal de esa carpeta.
+
+MACOS / LINUX
+Abre una terminal dentro de la carpeta del proyecto y ejecuta:
+    bash run.sh
+En macOS también se incluye iniciar_mac.command.
+Si Linux informa que falta el módulo venv, instala python3-venv con el gestor
+ de paquetes de tu distribución y vuelve a ejecutar el comando.
+
+La primera ejecución crea .venv e instala las dependencias; necesita Internet.
+Luego inicia Streamlit y muestra:
+    Dashboard local: http://127.0.0.1:8501
+    Enlace para compartir: https://<dominio-de-ngrok>
+
+El enlace ngrok pide NGROK_BASIC_USER y NGROK_BASIC_PASSWORD del archivo .env.
+Mantén el equipo conectado y la ventana del programa abierta.
+Para cerrar el dashboard y el túnel, presiona Ctrl+C en esa terminal.
+
+YA EXISTE LA BASE DE DATOS
+Todos los equipos usan la misma base Oracle de la asignación. Los cambios de
+clientes, inventario y pedidos se comparten. No ejecutes la limpieza, la creación
+ni la semilla SQL para abrir la aplicación; la base ya está preparada.
+Los scripts se incluyen como documentación y para una instalación nueva:
+    sql/00_limpiar_kardex.sql
+    sql/01_crear_modelo.sql
+    sql/02_datos_ejemplo.sql
+    sql/03_verificar.sql
+El script de carga requiere tablas vacías; su ejecución manual termina con COMMIT.
+Consulta README.md para administración e instrucciones completas.
+
+SI NGROK NO ABRE OTRO TÚNEL
+Si otra persona está usando el mismo túnel/token y hay conflicto, detengan ese
+ túnel o cambia NGROK_ENABLED=false en tu .env. El programa también continúa
+localmente si falla ngrok. El servidor local siempre requiere Internet para Oracle.
+
+CONTENIDO
+app.py: aplicación completa en un solo script Python.
+.env: plantilla sin credenciales reales; complétala solo en tu copia local.
+Wallet_ADBG05/: no incluido; obtén el wallet del propietario por un canal privado.
+requirements.txt: dependencias que se instalan en cada máquina.
+.streamlit/config.toml: tema y configuración de Streamlit.
+sql/: scripts de limpieza, modelo, carga de muestra y verificación.
+tools/admin_oracle.py: utilidad administrativa, no necesaria para abrir la página.
+tests/: pruebas locales y de integración opcionales.
+MANIFIESTO_SHA256.json: lista de archivos y hashes para comprobar la integridad.
+
+Esta entrega no incluye el wallet, el entorno virtual de la máquina original ni sus respaldos.

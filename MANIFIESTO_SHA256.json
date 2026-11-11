@@ -1,0 +1,23 @@
+{
+  ".env": "41de032f5442b1707e18de067fc6e1322e651530cace1998d223f82b35e192bf",
+  ".env.example": "41de032f5442b1707e18de067fc6e1322e651530cace1998d223f82b35e192bf",
+  ".gitignore": "a44cddd2406ad0b695ec5526c43aa1f5ac8a96dd02924ccd81b0344043d7e7f3",
+  ".streamlit/config.toml": "fc34745e1b91c47eade383c63bef556c52cec4562bc27dafd1e002393a6e461e",
+  "LEEME_PRIMERO.txt": "97486d0b5c0f5ddd7abd4d1dd41645fc8511cb57a1a4307fd634f0ba694e718a",
+  "README.md": "aa43a0acfd6dfb8922c09193e9bb3dccf7bd87b5092759705ab0faf91bb9a400",
+  "app.py": "9644e51550f1105e202ef2d6fb6ff9c771fc193a25d0f611ad810e3196f6ec12",
+  "iniciar_mac.command": "a7cc291852e01d93a69659e292082a7e7273e849c723d0e6d192ef0a6a572a7e",
+  "iniciar_windows.bat": "eaa6c4b517f90d11f902e797012c9faa3b584bc5cbe66a0012bf70764efe88e7",
+  "requirements.txt": "eb7e81caaead4860e61e2666b9a091e81f9d7fd4d9f26cb5474088083eb88fa0",
+  "run.sh": "c3ba1ee60baf5a9df4d262cb38adbfe3bdac8f4eddeb4a8bd7c8f2faa417cc0c",
+  "sql/00_limpiar_kardex.sql": "88eb6abc65b7f185b96cdc90e96414e1bca4c22f558deacca99abdd136da6242",
+  "sql/01_crear_modelo.sql": "797a1f468303b051edaf8e741723b33a2cda0980c9fcf1ef7eaeb8eb670f360e",
+  "sql/02_datos_ejemplo.sql": "e3f6236b716bc7ab81b50e45b0136354817f93da50217d18993397d55b433089",
+  "sql/03_verificar.sql": "e5c4c7005ca27da170139429fe4d14400e32c1c79d312e9b17117692b24a3640",
+  "tests/test_core_ropa.py": "645ab9f693c09088fe29aae26ec997d99abd934d8e603333f73faaf84f218e05",
+  "tests/test_launcher.py": "77415c825b3226cbede4002657a4725bc1130ff1cbf3617c4f23a29ab7d60aa9",
+  "tests/test_ngrok_integration.py": "4f8789ff488cf5f7c057e43e43fa00899497fe9b0ffa0b2f39c4cb59969c17a9",
+  "tests/test_oracle_integration.py": "4e3472026088a5bebbbd4eedf68b8375f16ab999ede64bcda8ad91d4efff6875",
+  "tests/test_ui_ropa.py": "5a70bff889efab9a5362c016136064b0fd2a66fc75521fe5e67b16c1f75a925f",
+  "tools/admin_oracle.py": "82413b139047fa4494e33c4108e1b004b04ab35f5da3fc9eae2425c3e9c37909"
+}
