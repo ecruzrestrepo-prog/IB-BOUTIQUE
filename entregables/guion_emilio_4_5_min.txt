@@ -1,0 +1,44 @@
+GUION DE EMILIO - 4 A 5 MINUTOS
+11 de noviembre de 2026
+
+DATOS FICTICIOS
+Cliente: Ana Demo 1111 | ana.demo.1111@example.com | 3000000000 | Dirección de prueba 123
+Prenda: Camiseta Demo 1111 | camiseta | M | Negro | precio 50000 | costo 30000 | existencias 10
+Usa otro sufijo si ya los registraste en un ensayo.
+
+0:00-0:15 - Presentar el recorrido
+“Voy a registrar un cliente, consultar una prenda y hacer una venta. Después mostraré cómo Python guarda los datos y descuenta el inventario.”
+
+0:15-0:50 - Clientes → Guardar cliente
+Completa los cuatro campos y muestra el ID. “El formulario envía estos datos a una función que valida y registra al cliente en Oracle.”
+
+0:50-1:35 - Productos e inventario → Guardar prenda
+Registra la prenda con 10 unidades. Búscala por nombre y filtra por talla M. “Esta fila es una variante de la prenda; aquí consultamos sus existencias.”
+
+1:35-2:15 - Crear pedido → Agregar al pedido → Confirmar y guardar pedido
+Elige a Ana, la prenda y cantidad 2. “Agregar prepara el carrito. Confirmar registra la venta y descuenta las unidades.” Muestra el número y el total de $100.000.
+
+2:15-2:35 - Productos e inventario → buscar la misma prenda
+Muestra 8 existencias. “Había 10 y vendimos 2. La consulta ya muestra el inventario actualizado en la base de datos.”
+
+2:35-3:10 - Código: _ui_clients
+“st.form agrupa los campos y el botón los envía. Si submitted es verdadero, llamamos a create_client con los datos del formulario.”
+
+3:10-3:45 - Código: create_client
+“Esta función recibe datos, los valida y ejecuta INSERT INTO para crear una fila. Los parámetros llevan los valores; commit confirma el registro.”
+
+3:45-4:20 - Código: create_order, bloque INSERT / UPDATE
+“El INSERT guarda el detalle del pedido. UPDATE resta la cantidad vendida al producto indicado por WHERE. El commit final confirma el pedido y el descuento juntos.”
+
+4:20-4:30 - Cerrar
+“Así conectamos el formulario con Python y SQL, y comprobamos el resultado: una venta registrada y ocho unidades disponibles.”
+
+TRES BÚSQUEDAS EN APP.PY
+def _ui_clients: actual 707; ZIP 702
+def create_client: actual 400; ZIP 395
+UPDATE dim_productos: actual 519; ZIP 514
+
+INSERT agrega una fila; UPDATE cambia una fila existente; Python coordina; commit confirma.
+El carrito no descuenta inventario. El descuento se confirma al guardar el pedido.
+No hay formulario de reposición manual en la versión actual.
+Guion preparado por revisión de código; no se probó una venta ni una conexión en vivo.
