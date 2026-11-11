@@ -1,5 +1,36 @@
 # Marca de ropa · Inventario, ventas y contabilidad
 
+Sistema de gestión para marcas de ropa
+
+Bienvenido a IB boutique.
+
+¿Tienes una marca de ropa y necesitas una manera más fácil de administrar tu negocio? IB boutique es una aplicación web diseñada para ayudar a las marcas de moda a organizar y controlar sus operaciones en un solo lugar.
+
+Nuestra plataforma permite gestionar la información de los clientes, registrar productos, controlar el inventario, crear pedidos y consultar las ventas del negocio. De esta manera, podrás tener toda la información organizada, ahorrar tiempo en tareas administrativas y llevar un mejor seguimiento de lo que sucede en tu marca.
+
+¿Qué puedes hacer con esta web?
+
+* Gestionar clientes: registrar nuevos compradores y consultar sus datos.
+* Administrar productos: agregar prendas con sus respectivas categorías, tallas, colores, costos y precios de venta.
+* Controlar el inventario: consultar las unidades disponibles y mantener actualizadas las existencias.
+* Registrar pedidos: crear compras con uno o varios productos y sus respectivas cantidades.
+* Consultar ventas: revisar los pedidos realizados y la información de cada compra.
+* Analizar resultados: visualizar la facturación, los costos, la utilidad bruta, el margen de ganancia y los productos más vendidos.
+
+¿Por qué adquirir esta página web?
+
+Porque administrar una marca de ropa no debería convertirse en una tarea complicada. Con esta herramienta puedes centralizar la información de tu negocio, reducir el desorden en los registros y tener una visión más clara de tus ventas e inventario.
+
+Además cuenta con un panel de resumen y gráficos que te ayudan a entender el comportamiento de tu negocio y tomar decisiones con base en la información registrada.
+
+Tecnología utilizada
+
+La aplicación fue desarrollada utilizando Python y Streamlit para la página web, Oracle SQL para almacenar y organizar la información, y la librería oracledb para conectar la aplicación con la base de datos.
+
+ROPA. – Tu negocio de moda, organizado en un solo lugar.
+
+
+
 Dashboard en español construido con **Streamlit y Oracle Autonomous Database**. La conexión, los seis módulos, las transacciones y el arranque de ngrok están en un único `app.py`. Los scripts de administración y las pruebas se ejecutan por separado; abrir la página nunca borra, crea ni vuelve a sembrar tablas.
 
 ## Ejecutar
