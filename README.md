@@ -4,7 +4,7 @@ Dashboard en español construido con **Streamlit y Oracle Autonomous Database**.
 
 ## Ejecutar
 
-Requiere **Python 3.12 o posterior de 64 bits**, conexión a Internet y acceso a Oracle. Esta entrega incluye `.env` y `.env.example` como plantillas sin credenciales reales. Las credenciales y el wallet se obtienen por separado del propietario por un canal privado. Cada máquina debe crear su propio entorno virtual e instalar las dependencias; no se distribuye `.venv`.
+Requiere **Python 3.12 o posterior de 64 bits**, conexión a Internet y acceso a Oracle. Esta entrega incluye `.env` como plantilla sin credenciales reales. Las credenciales y el wallet se obtienen por separado del propietario por un canal privado. Cada máquina debe crear su propio entorno virtual e instalar las dependencias; no se distribuye `.venv`.
 
 Empieza por `LEEME_PRIMERO.txt`. Antes de iniciar, completa `.env` con tus credenciales locales, coloca en `Wallet_ADBG05/` el wallet recibido del propietario por un canal privado y verifica que `WALLET_DIR` en `.env` apunte a esa carpeta. En Windows ejecuta `iniciar_windows.bat`; en macOS/Linux ejecuta `bash run.sh`. Los lanzadores crean el entorno, instalan los requisitos y arrancan la aplicación.
 
@@ -22,7 +22,7 @@ python -m pip install -r requirements.txt
 python app.py
 ```
 
-El `.env` incluido es una plantilla idéntica a `.env.example` y no contiene credenciales reales. Completa su configuración local antes de arrancar. Solicita al propietario las credenciales y el wallet por un canal privado y coloca el wallet en `Wallet_ADBG05/`. Si ya tienes un `.env` local configurado, consérvalo. Los equipos que se conecten a la misma base Oracle compartirán sus registros.
+El `.env` incluido es una plantilla y no contiene credenciales reales. Completa su configuración local antes de arrancar. Solicita al propietario las credenciales y el wallet por un canal privado y coloca el wallet en `Wallet_ADBG05/`. Si ya tienes un `.env` local configurado, consérvalo. Los equipos que se conecten a la misma base Oracle compartirán sus registros.
 
 En Windows, la instalación manual equivalente es:
 
@@ -71,7 +71,7 @@ La aplicación usa `dotenv_values(..., interpolate=False)`. No lee credenciales 
 
 Entrecomilla los valores que contengan espacios o `#`. Las contraseñas conservan su contenido literal, sin interpolar `${...}`. Para la autenticación ngrok, la secuencia `${` está reservada por sus políticas y se rechaza; el usuario tampoco admite `:`. Usa una contraseña compartida distinta de las claves de tus cuentas.
 
-Los certificados y claves del wallet son archivos y permanecen en su carpeta; `.env` contiene su ruta y contraseña. El `.gitignore` excluye `.env`, wallets, respaldos y archivos temporales por defecto; esta entrega incluye un `.env` de plantilla sin credenciales reales y no incluye el wallet. Conserva las credenciales solo en tu copia local. `.env.example` solo contiene campos vacíos y valores predeterminados.
+Los certificados y claves del wallet son archivos y permanecen en su carpeta; `.env` contiene su ruta y contraseña. Esta entrega incluye un `.env` de plantilla sin credenciales reales y no incluye el wallet. Completa las credenciales en tu copia local.
 
 Reinicia `python app.py` al cambiar el puerto, ngrok o las credenciales. El modo thin no necesita instalar Instant Client.
 

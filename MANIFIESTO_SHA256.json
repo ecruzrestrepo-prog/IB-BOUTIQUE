@@ -1,10 +1,8 @@
 {
   ".env": "41de032f5442b1707e18de067fc6e1322e651530cace1998d223f82b35e192bf",
-  ".env.example": "41de032f5442b1707e18de067fc6e1322e651530cace1998d223f82b35e192bf",
-  ".gitignore": "a44cddd2406ad0b695ec5526c43aa1f5ac8a96dd02924ccd81b0344043d7e7f3",
   ".streamlit/config.toml": "fc34745e1b91c47eade383c63bef556c52cec4562bc27dafd1e002393a6e461e",
-  "LEEME_PRIMERO.txt": "97486d0b5c0f5ddd7abd4d1dd41645fc8511cb57a1a4307fd634f0ba694e718a",
-  "README.md": "aa43a0acfd6dfb8922c09193e9bb3dccf7bd87b5092759705ab0faf91bb9a400",
+  "LEEME_PRIMERO.txt": "c34b62e5cc962d429bb9285ff8be2c7019822d3b1ae6098e8b8c98dbcd47de43",
+  "README.md": "1cca9a49b42c14bda322b9425a35730bcedb381820afb2f510570b050b3e5da9",
   "app.py": "9644e51550f1105e202ef2d6fb6ff9c771fc193a25d0f611ad810e3196f6ec12",
   "iniciar_mac.command": "a7cc291852e01d93a69659e292082a7e7273e849c723d0e6d192ef0a6a572a7e",
   "iniciar_windows.bat": "eaa6c4b517f90d11f902e797012c9faa3b584bc5cbe66a0012bf70764efe88e7",

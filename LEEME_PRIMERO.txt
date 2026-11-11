@@ -3,7 +3,7 @@ DASHBOARD DE ROPA — LEEME PRIMERO
 1. Trabaja en la carpeta del proyecto, donde están app.py y este archivo.
 2. Instala Python 3.12 o posterior de 64 bits desde https://www.python.org/downloads/.
    En Windows, habilita la opción de agregar Python al PATH.
-3. El archivo .env incluido es una plantilla idéntica a .env.example.
+3. El archivo .env incluido es una plantilla sin credenciales reales.
    Completa .env con tus credenciales locales antes de iniciar.
    Si ya tienes un .env local configurado, consérvalo.
    En algunos exploradores .env aparece oculto; sí está en la carpeta del proyecto.
